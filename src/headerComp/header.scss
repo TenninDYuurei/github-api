@@ -1,0 +1,33 @@
+@import '../variables';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin:;
+    padding: 0 1rem;
+    font-size: $large-fnt-size;
+    background-color: $secondary-black-color;
+    border-bottom: 2px;
+    border-color: $accent-color;
+    
+    .accent-text{
+        color: $accent-color;
+    }
+
+    .userDetails{
+        display: flex;
+        place-items: center;
+        gap:1rem;
+        background-color: inherit;
+    }
+    a{
+        font-weight: bold;
+        background-color: inherit;
+    }
+    .displayPic{
+        width:2rem;
+        height: 2rem;
+        // background-color: black;
+    }
+}

@@ -1,0 +1,11 @@
+.inherit-bg {
+  background-color: inherit;
+}
+
+.repo-section {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+}/*# sourceMappingURL=repoSection.css.map */

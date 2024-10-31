@@ -1,0 +1,17 @@
+@import '../variables';
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    // gap: 1rem;
+
+    a,label{
+        font-weight: bold;
+        padding: 1rem;
+        &:hover, &:focus{
+            cursor: pointer;
+        }
+    }
+}

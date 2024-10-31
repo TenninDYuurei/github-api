@@ -1,0 +1,38 @@
+@import '../../variables';
+
+
+.card{
+    padding: 20px 30px;
+    margin: 10px;
+    background-color: $white-color;
+    color: $black-color;
+    // padding: 0 20px;
+    border-radius: 20%;
+    width: min(150px, 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-weight: bold;
+}
+
+
+.infoSection{
+    padding: 5px 0;
+    margin: 5px;
+}
+
+a{
+    color: $white-color;
+    text-decoration: none;
+    border: none;
+    background-color: $black-color;
+    padding: 0 20px;
+    width: fit-content;
+    border-radius: 5px;
+    &:hover{
+        font-weight: bold;
+    }
+}

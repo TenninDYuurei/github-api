@@ -1,0 +1,15 @@
+.inherit-bg {
+  background-color: inherit;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.body {
+  color: #F2F2F2;
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=App.css.map */

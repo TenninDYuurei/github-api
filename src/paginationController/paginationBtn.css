@@ -1,0 +1,25 @@
+.inherit-bg {
+  background-color: inherit;
+}
+
+button {
+  color: rgb(80, 5, 80);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30%;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+button:hover {
+  color: #F2F2F2;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+
+.paginationComp {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}/*# sourceMappingURL=paginationBtn.css.map */

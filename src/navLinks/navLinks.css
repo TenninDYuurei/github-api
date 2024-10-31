@@ -1,0 +1,16 @@
+.inherit-bg {
+  background-color: inherit;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+ul a, ul label {
+  font-weight: bold;
+  padding: 1rem;
+}
+ul a:hover, ul a:focus, ul label:hover, ul label:focus {
+  cursor: pointer;
+}/*# sourceMappingURL=navLinks.css.map */
