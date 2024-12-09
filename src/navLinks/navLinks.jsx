@@ -12,7 +12,7 @@ export const NavLinks = () => {
           <Link  to='/404page'  className='accent-text inherit-bg'>404</Link>
         </li>
         <li className='inherit-bg'>
-          <Link  to='/error-page' onClick={()=>{throw new Error("oops something went wrong")}} 
+          <Link  to='/error-page' 
             className='accent-text inherit-bg'>Error</Link>
         </li>
     </ul>

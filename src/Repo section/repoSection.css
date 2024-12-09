@@ -2,10 +2,17 @@
   background-color: inherit;
 }
 
+.bg {
+  min-height: 70vh;
+  max-height: 500px;
+}
+
 .repo-section {
   display: grid;
   gap: 1rem;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(3, minmax(200px, 300px));
+  overflow: scroll;
+  overflow-x: hidden;
 }/*# sourceMappingURL=repoSection.css.map */

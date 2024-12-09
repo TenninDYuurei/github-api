@@ -1,20 +1,48 @@
 import React from 'react'
 import { PgBtn } from './pgBtn'
-// import { useEffect } from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
-export const PaginationComp = () => {
+export const PaginationComp = ({itemsOnPage, currentPage, changePage}) => {
 
-  const nextPage = ()=>{
-    console.log('you went forward')
+// const [current, setCurrent] = useState(currentPage);
+
+const [pgItemNo] = useState(itemsOnPage);
+
+  const nextPage = (currentPage)=>{
+    changePage(()=> currentPage+1)
   }
-  const prevPage = ()=>{
-    console.log('you went backward')
+
+  const prevPage = (currentPage)=>{
+    changePage(()=> currentPage-0)
   }
+
+  const [disableNext, setdisableNext] = useState(true);
+  const [disablePrev, setdisablePrev] = useState(true);
+
+  useEffect(() => {
+    if (currentPage>1) {
+     setdisablePrev(false)
+     console.log(setdisablePrev)
+    }
+    if (currentPage<=1) {
+     setdisablePrev(true)
+     console.log(setdisablePrev)
+    }
+    if (pgItemNo>=5) {
+     setdisableNext(false)
+     console.log(setdisableNext)
+    }
+    if (pgItemNo<5) {
+     setdisableNext(true)
+     console.log(setdisableNext)
+    }  
+  }, [currentPage, pgItemNo]);
 
   return (
     <div className='paginationComp'>
-        <PgBtn direction="Back" logic={prevPage}/>
-        <PgBtn direction="Next" logic={nextPage}/>
+        <PgBtn disableBtn={disablePrev} direction="Back" logic={prevPage}/>
+        <PgBtn disableBtn={disableNext} direction="Next" logic={nextPage}/>
     </div>
   )
 }

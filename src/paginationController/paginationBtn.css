@@ -14,7 +14,6 @@ button {
 button:hover {
   color: #F2F2F2;
   background-color: rgb(0, 0, 0);
-  border: 1px solid white;
 }
 
 .paginationComp {
@@ -22,4 +21,5 @@ button:hover {
   display: flex;
   justify-content: space-around;
   margin: 1rem 0;
+  padding: 1rem 0;
 }/*# sourceMappingURL=paginationBtn.css.map */
