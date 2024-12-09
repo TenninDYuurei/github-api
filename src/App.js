@@ -5,13 +5,14 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { PageNotFound } from './features/404';
 import { ErrorComp } from './features/errorPage';
 import { ErrorBoundary } from 'react-error-boundary';
+import { FallbackUi } from './features/errorPage';
 import { CreateRepo } from './createRepo/createRepo';
 import { NewRepo } from './newRepo/newRepo';
 
 
 function App() {
   return (
-    <ErrorBoundary fallback={<div>Oops an error occured</div>}>
+    <ErrorBoundary fallback={<FallbackUi/>}>
       <>
         <div className='body'>
           <Header/>
