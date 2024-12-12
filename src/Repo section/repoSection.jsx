@@ -6,7 +6,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
+
 export const RepoSection = () => {
+
+
 
   const [state, setState] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,7 +30,7 @@ export const RepoSection = () => {
     return (
       <div className='bg' style={{ 'backgroundColor': 'black' }}>
         <div className='repo-section'>
-          <p>Loading...</p>
+          <p style={{'color':'white'}}>Loading...</p>
         </div>
         <PaginationComp/>
       </div>
@@ -44,5 +47,7 @@ export const RepoSection = () => {
       <PaginationComp itemsOnPage={state.length} currentPage={currentPage} changePage={changePage} />
     </div>
   );
+ 
+  
  
 }

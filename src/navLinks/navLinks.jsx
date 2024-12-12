@@ -1,19 +1,18 @@
 import React from 'react';
 import './navLinks.css';
-import { Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 export const NavLinks = () => {
   return (
     <ul className='inherit-bg'>
         <li className='inherit-bg'>
-            <Link  to='/create-repo'  className='accent-text inherit-bg'>Create</Link>
+            <NavLink  to='/create-repo'  className='accent-text inherit-bg'>Create</NavLink>
         </li>
         <li className='inherit-bg'>
-          <Link  to='/404page'  className='accent-text inherit-bg'>404</Link>
+          <NavLink  to='/nowhere'  className='accent-text inherit-bg'>404</NavLink>
         </li>
         <li className='inherit-bg'>
-          <Link  to='/error-page' 
-            className='accent-text inherit-bg'>Error</Link>
+          <NavLink  to='/error-page' className='accent-text inherit-bg'>Error</NavLink>
         </li>
     </ul>
   )

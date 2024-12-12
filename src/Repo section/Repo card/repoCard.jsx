@@ -1,5 +1,7 @@
 import React from 'react';
 import './repocard.css';
+import {Link} from 'react-router-dom';
+
 
 export const RepoCard = ({prop}) => {
 
@@ -17,7 +19,7 @@ export const RepoCard = ({prop}) => {
           <p className='title'>Language:</p>
           {prop.language ? <p>{prop.language}</p> : <p>Empty repo</p>}
         </div>
-          <a href={prop.html_url} target='blank' className='btn'>Visit repo</a>
+          <Link to={`/view-repo/${prop.name}`}   className='btn'>Visit repo</Link>
     </div>
   )
 }

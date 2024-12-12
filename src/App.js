@@ -8,6 +8,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import { FallbackUi } from './features/errorPage';
 import { CreateRepo } from './createRepo/createRepo';
 import { NewRepo } from './newRepo/newRepo';
+import { ViewRepo } from './view-repo/ViewRepo';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/create-repo' element={<CreateRepo/>}/>
           <Route path='/error-page' element={<ErrorComp/>}/>
           <Route path='/view-new-repo' element={<NewRepo/>}/>
+          <Route path='view-repo/:name' element={<ViewRepo/>}/>
           <Route path='/*' element={<PageNotFound/>}/>
         </Routes>
       </>

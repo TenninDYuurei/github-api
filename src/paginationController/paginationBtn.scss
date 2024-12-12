@@ -3,13 +3,13 @@
 button{
     color:$accent-color;
     background-color: $secondary-black-color;
-    border: none;
-    border-radius: 30%;
-    padding: 5px;
+    border: ipx solid transparent;
+    // border-radius: 30%;
     font-weight: bolder;
     font-size: $small-fnt-size;
-
+    
     &:hover{
+        padding: 5px;
        color: $white-color;
        background-color: $black-color;
     //    border: 1px solid white;

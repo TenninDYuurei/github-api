@@ -13,4 +13,8 @@ ul a, ul label {
 }
 ul a:hover, ul a:focus, ul label:hover, ul label:focus {
   cursor: pointer;
+}
+
+.active {
+  color: black;
 }/*# sourceMappingURL=navLinks.css.map */
