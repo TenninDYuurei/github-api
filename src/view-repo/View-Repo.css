@@ -14,4 +14,12 @@
 }
 .view-repo h2, .view-repo p {
   color: rgb(0, 0, 0);
+}
+
+.repo-details {
+  display: flex;
+  gap: 1rem;
+}
+.repo-details > p:first-child {
+  font-weight: bold;
 }/*# sourceMappingURL=View-Repo.css.map */

@@ -13,3 +13,11 @@
         color: $black-color;
     }
 }
+
+.repo-details{
+    display:flex;
+    gap:1rem;
+    &>p:first-child{
+        font-weight: bold;
+    }
+}
