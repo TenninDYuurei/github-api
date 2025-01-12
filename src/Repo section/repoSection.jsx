@@ -32,7 +32,7 @@ export const RepoSection = () => {
   useEffect(() => {
     if (repoNumber !== null) {
       setPages(getPagesLength(repoNumber, itemsPerPage));
-      console.log(repoNumber);
+      // console.log(repoNumber);
     }
   }, [repoNumber]);
   
@@ -49,7 +49,7 @@ export const RepoSection = () => {
 
   const prevPage = (current)=>{
     if(current>1){
-      console.log(currentPage)
+      // console.log(currentPage)
       setCurrentPage(current-=1)
     }
     // else{
@@ -58,7 +58,7 @@ export const RepoSection = () => {
   }
   const nextPage = (current)=>{
     if(current<pages){
-      console.log(currentPage)
+      // console.log(currentPage)
       setCurrentPage(current+=1)
     }
     // else{

@@ -12,7 +12,7 @@ export const CreateRepo = () => {
   let navigate = useNavigate()
 
   const [formDetail, setFormDetail] = useState({repoName:'',repoDescription:''});
-  const token = process.env.REACT_APP_GITHUB_TOKEN;
+  const token = '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'
   const formRef = createRef()
   const [error, setError] = useState('');
 
