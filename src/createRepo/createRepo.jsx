@@ -42,7 +42,7 @@ export const CreateRepo = () => {
       description: repoDescription,
     }, {
       headers: {
-        Authorization: `token ${token}`,
+        Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json'
       }
     })
