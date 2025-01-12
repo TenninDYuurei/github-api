@@ -29,7 +29,7 @@ export const NewRepo = () => {
     try {
       await axios.delete(url, {
         headers: {
-          Authorization: `token ${token}`,
+          Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
         }
       });
