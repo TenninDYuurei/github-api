@@ -1,7 +1,3 @@
-.inherit-bg {
-  background-color: inherit;
-}
-
 .repo-info {
   display: flex;
   flex-direction: column;

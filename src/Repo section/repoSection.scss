@@ -6,13 +6,24 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-columns: repeat(3, minmax(180px, 280px));
     // grid-template-columns: 3;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
+    // overflow-x: hidden;
     
 
 }
 // .container{
 //     overflow: scroll;
 // }
+
+@media(max-width:900px){
+    .repo-section{
+    grid-template-columns: repeat(2, minmax(180px, 280px));
+    }
+}
+@media(max-width:550px){
+    .repo-section{
+    grid-template-columns: repeat(1, minmax(220px, 320px));
+    }
+}

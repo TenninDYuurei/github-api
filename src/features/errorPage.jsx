@@ -18,7 +18,7 @@ const FallbackUi = ()=> {
 
   return(
     <div style={{'color':'white', 'margin':'1rem'}}>Oops, an error occured.
-      <span onClick={()=>{navigate('/'); window.location.reload(false)}} style={{'cursor':'pointer','fontWeight':'bolder'}}>
+      <span onClick={()=>{navigate('/'); window.location.reload(false)}} style={{'cursor':'pointer','fontWeight':'bolder','color':'blue'}}>
         Go Home
       </span>
     </div>

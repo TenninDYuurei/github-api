@@ -1,18 +1,24 @@
 @import '../variables';
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // margin:;
-    padding: 0 1rem;
-    font-size: $large-fnt-size;
-    background-color: $secondary-black-color;
-    border-bottom: 2px;
-    border-color: $accent-color;
-    
+    background-color: $secondary-color;
     .accent-text{
         color: $accent-color;
+    }
+    
+    .container{
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        align-items: center;
+        // margin:;
+        padding: 0 1rem;
+        font-size: $large-fnt-size;
+        border-bottom: 2px;
+        border-color: $accent-color;
+        // max-width: 1280px;
     }
 
     .userDetails{

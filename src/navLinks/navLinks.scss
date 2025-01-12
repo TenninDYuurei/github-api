@@ -6,7 +6,7 @@ ul{
     text-decoration: none;
     display: flex;
     // gap: 1rem;
-
+    position: relative;
     a,label{
         font-weight: bold;
         padding: 10px;
@@ -15,6 +15,46 @@ ul{
         }
     }
 }
+
+.hamburgerMenu{
+    width: 30px;
+    display: none;
+}
+
+.first-container{
+    position: relative;
+}
 .active{
     color:black
+}
+.closeBtn{
+    display: none;
+    position: absolute;
+    font-weight: bolder;
+    width: 25px;
+    top: -10px;
+    right: -10px;
+    background-color: $secondary-color;
+}
+@media(max-width:550px){
+    ul{
+        position: absolute;
+        flex-direction: column;
+        top:0;
+        right:0;
+        background-color: $secondary-color;
+        gap: 1.5rem;
+        border: 1px solid $black-color;
+        // display: none;
+        li{
+            padding: .6rem;
+        }
+    }
+    .dont-show{
+        display: none;
+    }
+    .hamburgerMenu{
+        width: 30px;
+        display: block;
+    }
 }

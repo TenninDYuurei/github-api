@@ -1,11 +1,8 @@
-.inherit-bg {
-  background-color: inherit;
-}
-
 ul {
   list-style: none;
   text-decoration: none;
   display: flex;
+  position: relative;
 }
 ul a, ul label {
   font-weight: bold;
@@ -15,6 +12,47 @@ ul a:hover, ul a:focus, ul label:hover, ul label:focus {
   cursor: pointer;
 }
 
+.hamburgerMenu {
+  width: 30px;
+  display: none;
+}
+
+.first-container {
+  position: relative;
+}
+
 .active {
   color: black;
+}
+
+.closeBtn {
+  display: none;
+  position: absolute;
+  font-weight: bolder;
+  width: 25px;
+  top: -10px;
+  right: -10px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 550px) {
+  ul {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    gap: 1.5rem;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  ul li {
+    padding: 0.6rem;
+  }
+  .dont-show {
+    display: none;
+  }
+  .hamburgerMenu {
+    width: 30px;
+    display: block;
+  }
 }/*# sourceMappingURL=navLinks.css.map */

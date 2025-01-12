@@ -21,12 +21,12 @@ export const ViewRepo = () => {
     console.log(state);
     }
     fetchData()
-  },[url])
+  },[url,state])
 
   if(!state){
     return (
       <div className='view-repo'>
-          <h2>Name</h2>
+          <h2>LOADING......</h2>
           <p> <span>Detail</span>Repo Detail</p>
           <p> <span>Detail</span>Repo Detail</p>
           <p> <span>Detail</span>Repo Detail</p>

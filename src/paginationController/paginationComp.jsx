@@ -1,3 +1,6 @@
+//Didn't end up using this component, but didn't wanna delete it in case something broke XD
+
+
 import React from 'react'
 import { PgBtn } from './pgBtn'
 import { useState } from 'react'

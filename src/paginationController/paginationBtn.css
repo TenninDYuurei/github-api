@@ -2,14 +2,14 @@
   background-color: inherit;
 }
 
-button {
+button.pag {
   color: rgb(80, 5, 80);
   background-color: rgb(255, 255, 255);
   border: ipx solid transparent;
   font-weight: bolder;
   font-size: 1rem;
 }
-button:hover {
+button.pag:hover {
   padding: 5px;
   color: #F2F2F2;
   background-color: rgb(0, 0, 0);

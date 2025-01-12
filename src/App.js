@@ -23,7 +23,7 @@ function App() {
           <Route path='/' element={<RepoSection/>}/>
           <Route path='/create-repo' element={<CreateRepo/>}/>
           <Route path='/error-page' element={<ErrorComp/>}/>
-          <Route path='/view-new-repo' element={<NewRepo/>}/>
+          <Route path='/view-new-repo/:repoName' element={<NewRepo/>}/>
           <Route path='view-repo/:name' element={<ViewRepo/>}/>
           <Route path='/*' element={<PageNotFound/>}/>
         </Routes>
