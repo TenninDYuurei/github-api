@@ -36,7 +36,7 @@ export const CreateRepo = () => {
         return
       }
     console.log(token)
-    console.log('Payload:', { name: repoName, description: repoDescription });
+    // console.log('Payload:', { name: repoName, description: repoDescription });
     axios.post('https://api.github.com/user/repos', {
       name: repoName,
       description: repoDescription,
