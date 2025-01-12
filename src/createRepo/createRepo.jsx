@@ -12,7 +12,7 @@ export const CreateRepo = () => {
   let navigate = useNavigate()
 
   const [formDetail, setFormDetail] = useState({repoName:'',repoDescription:''});
-  const token = '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'
+  const token = process.env.REACT_APP_GITHUB_TOKEN;
   const formRef = createRef()
   const [error, setError] = useState('');
 
@@ -35,7 +35,7 @@ export const CreateRepo = () => {
         window.alert('Please fill out all the fields')
         return
       }
-    
+    console.log(token)
     axios.post('https://api.github.com/user/repos', {
       name: repoName,
       description: repoDescription,
