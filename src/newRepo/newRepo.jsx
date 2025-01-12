@@ -12,7 +12,7 @@ export const NewRepo = () => {
 
   const url = `https://api.github.com/repos/TenninDYuurei/${repoName}`
 
-  const token = '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'
+  const token = process.env.REACT_APP_GITHUB_TOKEN
 
   const [state, setState] = useState()
 
@@ -23,9 +23,7 @@ export const NewRepo = () => {
       console.error('Error fetching repository data:', error);
       // return null;
     })
-    console.log(state);
-    console.log(url);
-  },[repoName, url, state])
+  },[repoName, url])
 
   const deleteRepo = async () => {
     try {
